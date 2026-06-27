@@ -1,0 +1,19 @@
+{
+  "name": "zephyros-study-os",
+  "version": "1.0.0",
+  "description": "Premium AI-powered study management platform for Sri Lankan A/L Students",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "appwrite": "^26.1.0",
+    "idb": "^8.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Zephyros Study OS</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body class="theme-dark">
+    <!-- Auth Container -->
+    <div id="auth-container" class="auth-overlay"></div>
+
+    <div id="app-shell" style="display: none">
+      <aside class="sidebar glass-panel" id="sidebar">
+        <div class="logo-area">
+          <span class="logo-icon">⛅</span>
+          <span class="logo-text">Zephyros</span>
+        </div>
+        <nav class="nav-menu" id="nav-menu"></nav>
+        <div class="user-profile-mini" id="user-profile-mini"></div>
+      </aside>
+
+      <main class="main-content" id="main-content">
+        <div class="top-bar glass-panel">
+          <div class="global-search-wrapper">
+            <input
+              type="text"
+              id="global-search"
+              class="global-search"
+              placeholder="Search papers, topics, tasks..."
+            />
+          </div>
+          <div class="top-bar-actions">
+            <button class="btn-icon" id="theme-toggle">🌗</button>
+            <button class="btn-icon" id="notification-btn">🔔</button>
+          </div>
+        </div>
+
+        <div class="view-container" id="view-container">
+          <div class="loader-screen">
+            <div class="liquid-loader"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
