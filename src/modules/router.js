@@ -1,7 +1,7 @@
 import { renderDashboard } from "../views/Dashboard.js";
 import { renderPastPapers } from "../views/PastPapers.js";
 import { renderSubjects } from "../views/Subjects.js";
-import { renderPlanner } from "../views/Planner.js";
+import { renderPlanner } from "../views/planner.js";
 import { renderFocusMode } from "../views/FocusMode.js";
 import { renderAnalytics } from "../views/Analytics.js";
 import { renderCalendar } from "../views/Calendar.js";
