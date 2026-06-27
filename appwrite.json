@@ -1,0 +1,12 @@
+{
+  "projectId": "6a3fd45f001afa08b14c",
+  "sites": [
+    {
+      "name": "EASY AL",
+      "framework": "other",
+      "installCommand": "npm install",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    }
+  ]
+}
