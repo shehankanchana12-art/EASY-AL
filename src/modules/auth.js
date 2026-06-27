@@ -45,7 +45,7 @@ export async function checkAuth() {
     currentUser = null;
     appShell.style.display = "none";
     authContainer.style.display = "flex";
-    renderAuth(authContainer);
+    renderAuth(authContainer, checkAuth);
   }
 }
 

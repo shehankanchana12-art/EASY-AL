@@ -1,6 +1,6 @@
 import { account, ID } from "../lib/appwrite.js";
 
-export function renderAuth(container) {
+export function renderAuth(container, onLoginSuccess) {
   container.innerHTML = `
     <div class="auth-card glass-panel fade-in">
       <div class="auth-header">
@@ -70,8 +70,7 @@ export function renderAuth(container) {
         await account.create(ID.unique(), email, password);
         await account.createEmailPasswordSession(email, password);
       }
-      const { checkAuth } = await import("../modules/auth.js");
-      await checkAuth();
+      if (onLoginSuccess) await onLoginSuccess();
     } catch (error) {
       errorEl.textContent = error.message;
     }
@@ -106,10 +105,10 @@ export function renderAuth(container) {
       } catch (_) {}
 
       await account.createAnonymousSession();
-      const { checkAuth } = await import("../modules/auth.js");
-      await checkAuth();
+      if (onLoginSuccess) await onLoginSuccess();
     } catch (error) {
       document.getElementById("auth-error").textContent = error.message;
     }
   });
 }
+

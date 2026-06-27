@@ -7,6 +7,7 @@ import { renderAnalytics } from "../views/Analytics.js";
 import { renderCalendar } from "../views/Calendar.js";
 import { renderSettings } from "../views/Settings.js";
 import { renderAIAssistant } from "../views/AIAssistant.js";
+import { renderProfile } from "../views/Profile.js";
 
 const routes = {
   "/": renderDashboard,
@@ -18,6 +19,7 @@ const routes = {
   "/calendar": renderCalendar,
   "/settings": renderSettings,
   "/ai": renderAIAssistant,
+  "/profile": renderProfile,
 };
 
 export function initRouter() {
@@ -32,6 +34,7 @@ export function initRouter() {
     { path: "/analytics", icon: "📊", label: "Analytics" },
     { path: "/calendar", icon: "🗓️", label: "Calendar" },
     { path: "/ai", icon: "🤖", label: "AI Assistant" },
+    { path: "/profile", icon: "👤", label: "Profile" },
     { path: "/settings", icon: "⚙️", label: "Settings" },
   ];
 
